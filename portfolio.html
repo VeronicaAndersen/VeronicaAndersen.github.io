@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sv" nighteye="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+    <title>by Veronica</title>
+</head>
+<nav>
+    <ul class="meny" id="meny">
+        <li><a href="./">Hem</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="about.html">Om</a></li>
+        <li><a href="CV.html">CV</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <div id="openMenu" onclick="menuOpen(); slideIn()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <div id="closeMenu" onclick="menuClose(); ">
+        <div id="line4"></div>
+        <div id="line5"></div>
+    </div>
+</nav>
+
+<body>
+    <!-- <h5>Om du vill kika på Chatt applikation kan du logga in med: Användarnamn: Just_checking & Lösenord: 12345</h5> -->
+    <div class="websites">
+        <div class="website" onclick="window.open('https://movie-land-by-veronica.vercel.app/');">
+            <img src="images/MovieLand.png" alt="">
+            <figcaption>Movieland - React & Rest API</figcaption>
+        </div>
+        <div class="website" onclick="window.open('https://trainer-pokemon.vercel.app');">
+            <img src="images/Pokemon.png" alt="">
+            <figcaption>Pokemon Trainer app - Angular</figcaption>
+        </div>
+        <div class="website" onclick="window.open('https://todolist-by-veronica.vercel.app/');">
+            <img src="images/Todo2.png" alt="">
+            <figcaption>Todo list applikation - React</figcaption>
+        </div>
+        <div class="website" onclick="window.open('https://refold.se');">
+            <img src="images/Refold.png" alt="">
+            <figcaption>Refold.se - Wordpress</figcaption>
+        </div>
+        <div class="website" onclick="window.open('https://menu-by-veronica.vercel.app/');">
+            <img src="images/Menu.png" alt="">
+            <figcaption>Responsive meny - React</figcaption>
+        </div>
+        <div class="website" onclick="window.open('https://github.com/VeronicaAndersen/message_app');">
+            <img src="images/Message.png" alt="">
+            <figcaption>Chatt applikation - React</figcaption>
+        </div>
+        <!-- <div class="website" onclick="window.open('http://by-veronica.ezyro.com/Ja.html');">
+            <img src="images/Dogguard.png" alt="">
+            <figcaption>Hundvakt</figcaption>
+        </div> -->
+        <!-- <div class="website" onclick="window.open('http://by-veronica.ezyro.com/Hedlofsfoton/');">
+            <img src="images/Hedlof.png" alt="">
+            <figcaption>Hedlöfsfoton</figcaption>
+        </div>
+        <div class="website"
+            onclick="window.open('http://by-veronica.ezyro.com/Databaskonstruktion/Databaskonstruktion.php');">
+            <img src="images/Agenter.png" alt="">
+            <figcaption>Agenter - PHP</figcaption>
+        </div> -->
+        <!-- <div class="website" onclick="window.open('https://wwwlab.iit.his.se/b18veran/XML-API/Projekt/Projekt.php');">
+            <img src="images/Bukowski.png" alt="">
+            <figcaption>Bukowski - PHP och XML</figcaption>
+        </div>
+        <div class="website"
+            onclick="window.open('https://wwwlab.iit.his.se/b18veran/Mobilappdesign/Bootstrap/dugga1bild-karusell.html');">
+            <img src="images/Strindberg.png" alt="">
+            <figcaption>Strindberg - Bootstrap</figcaption>
+        </div> -->
+    </div>
+
+    <button onclick="location.href='https://github.com/VeronicaAndersen?tab=repositories';">Länk till GitHub!</button>
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+    <title>by Veronica</title>
+</head>
+<nav>
+
+    <ul class="meny">
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">Om</a></li>
+        <li><a href="CV.html">CV</a></li>
+        <li><a href="kontakt.html" class=" active">Kontakt</a></li>
+    </ul>
+</nav>
+
+<body>
+    <div class="banner">Detta formulär är under uppbyggnad!<br> Så förnärvarande fungerar inte detta formulär.</div>
+    <form class="kontaktForm"><!-- action="mailto:admin@by-veronica.com" -->
+        <h2>Kontakta mig!</h2>
+
+        <div><input type="text" id="name" placeholder="Namn Namnsson" onkeyup="validate(this.id)"></div>
+        <div class="check" id="nameFeedback"></div>
+
+        <div><input type="email" id="email" placeholder="namn@namn.se" onkeyup="validateMail(this.id)"></div>
+        <div class="check" id="emailFeedback"></div>
+
+        <div><textarea cols="30" rows="5"
+                placeholder="Beskrivning av ditt problem/vad du vill ha hjälp med."></textarea></div>
+
+        <button onclick="alert('Under uppbyggnad, detta formulär ledar ingenstans ännu tyvärr!')">Skicka</button>
+    </form>
+
+</body>
+<script src="script.js"></script>
+
+</html>

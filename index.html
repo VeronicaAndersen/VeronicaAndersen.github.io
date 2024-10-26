@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+ -->
+    <title>by Veronica</title>
+</head>
+<nav>
+    <ul class="meny" id="meny">
+        <li><a href="./" class="active">Hem</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">Om</a></li>
+        <li><a href="CV.html">CV</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <div id="openMenu" onclick="menuOpen(); slideIn()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <div id="closeMenu" onclick="menuClose(); ">
+        <div id="line4"></div>
+        <div id="line5"></div>
+    </div>
+</nav>
+
+
+<body>
+    <div class="mig">
+        <div class="diamond">
+            <p>Hej Veronica här och är junior systemutvecklare!</p>
+        </div>
+        <img src="images/profilePic.png" alt="" class="me">
+    </div>
+    <div class="om">
+        <h2>Kort om mig!</h2>
+            <p>Högpresterande systemutvecklare med fokus på detaljer och användarbehov.<br>
+                Stark samarbetsförmåga och passion för att lösa problem. Driven av att skapa positiv inverkan och bygga relationer.</p>
+        <button onclick="document.location='about.html'">Läs mer!</button>
+    </div>
+    <div class="timelineContainer">
+        <h2>Tidslinje</h2>
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <h2>Augusti 2023 - Nu</h2>
+                    <i>Software Engineer - Konsult Volvo AB</i>
+                    <p>Utveckling och modernisering av orderhanteringssystem, byggt med .net C#, javascript, Blazor samt databaser och apier. </p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>September 2022 - Juni 2023</h2>
+                    <i>Systemutvecklare - Konsult Syncify AB</i>
+                    <p>Utveckling av nya och befintliga e-handelsplattformar, byggt med .net C#, javascript kopplat med databaser och rest apier. <br><strong>Arbetsuppgifter:</strong> Projektledning, projektplanerare och utvecklare.</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>Juli 2023 - September 2023</h2>
+                    <i>Fullstackutvecklare - Experis Academy</i>
+                    <p>Vidare utbilning med fokus på de senaste webbteknologier så som react och angular, java och rest apier.</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>September 2021 - Mars 2022</h2>
+                    <i>Support tekninker 24/7- Iver AB</i>
+                    <p>Support tekinker under obekväma arbetstider för företag runt hela världen. Allt från serverdrift, konto problematik och system/produktions-problematik. <br><strong>Arbetsuppgifter:</strong> Hantering av änrenden via telefon och mail.</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>Augusti 2018 - Juni 2021</h2>
+                    <i>Kandidatexamen inom Webbutveckling - Programmering</i>
+                    <p>Javascript, java, .net, C++, databaskontruktion, UX-design, XML - apier, datorgrafik, responsiv plattformsutveckling och CMS.</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>Somrarna 2020 - 2021</h2>
+                    <i>Driftoperatör - Nynäs AB</i>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>Januari 2016 - Augusti 2019</h2>
+                    <i>Hemtjänst - Tuvegården </i>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>Augusti 2014 - Juni 2017</h2>
+                    <i>Gymnasieexamen inom Teknik - design & produktutvecklng.</i>
+                    <p>Bild och form, design och gränssnittsdesign.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <div class="kontakt">
+        <h2>Kontakta mig!</h2>
+        <p>Kontakta mig via formuläret som länkas nedan</p>
+        <button onclick="document.location='kontakt.html'">Kontakta mig</button>
+    </div> -->
+
+</body>
+<script src="script.js"></script>
+
+</html>

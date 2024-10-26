@@ -1,0 +1,508 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Exo:wght@200;600&display=swap');
+:root {
+    --primary: #cae7e3;
+    --secondary: #ffd3fd;
+    --bgcolor: #f0edec;
+}
+
+* {
+    /* font-family: 'Roboto', sans-serif; */
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+}
+
+
+body {
+    background-color: var(--bgcolor);
+}
+
+p {
+    font-size: 1rem;
+}
+
+button {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 50px;
+    border: 3px solid var(--secondary);
+    border-radius: 10px;
+    background-color: var(--secondary);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #fabbf7;
+    border-color: #fabbf7;
+}
+
+@keyframes pulsate {
+    0% {
+        box-shadow:
+            0 0 25px #ec9ce8,
+            0 0 50px var(--secondary);
+    }
+}
+
+
+/* ------------------------------------Hem------------------------- */
+.mig {
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+
+/* ------------------------------------Om------------------------- */
+
+.om {
+    padding: 16px;
+    background-color: var(--primary);
+    height: fit-content;
+}
+
+/* ------------------------------------TimeLine------------------------- */
+
+.timelineContainer {
+    padding: 16px;
+    background-color: #fff;
+    height: fit-content;
+}
+
+/* Denna innehåller timelinen */
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Detta är självaste linjen */
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    background-color: #f0edec;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container runt om innehållet */
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* Cirklarna */
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #f0edec;
+    border: 4px solid var(--primary);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Vänster containrarna */
+
+.left {
+    left: 0;
+}
+
+/* Höger  containrarna*/
+
+.right {
+    left: 50%;
+}
+
+/* Pilarna åt höger*/
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #f0edec;
+    border-width: 10px 10px 10px 0;
+    transform: rotate(180deg);
+    border-color: transparent #f0edec transparent transparent;
+}
+
+/* Pilarna åt vänster*/
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #f0edec;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #f0edec transparent transparent;
+}
+
+/* Positionera cirklarna på höger containrarna på vänster sida*/
+
+.right::after {
+    left: -16px;
+}
+
+/* innehållet */
+
+.content {
+    padding: 20px 30px;
+    background-color: #f0edec;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* ------------------------------------Portfolio------------------------- */
+.websites {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.website {
+    width: 30vw;
+    cursor: pointer;
+}
+
+.website img {
+    width: 30vw;
+    border-radius: 10px;
+
+}
+
+.website figcaption {
+    margin-bottom: 30px;
+}
+
+/* ------------------------------------CV------------------------- */
+.cv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    padding: 20px;
+    background-color: var(--primary);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+
+/* ------------------------------------Kontakt------------------------- */
+input[type=text], input[type=email], textarea {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 10px;
+    display: inline-block;
+    border: 0px;
+    text-align: left !important;
+    border-bottom: var(--primary) solid 3px;
+    background-color: #f0edec;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.check {
+    color: #f00;
+}
+
+.banner {
+    width: 100%;
+    height: fit-content;
+    background-color: khaki;
+    text-align: center;
+    padding: 20px;
+}
+
+/*-----------------------------Menu-------------------------*/
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    border-bottom: var(--secondary) 2px solid;
+    font-weight: bold;
+}
+.active {
+    font-weight: bold;
+    border-bottom: var(--primary) 2px solid;
+}
+/* ------------------------------------Stor plattform------------------------- */
+@media screen and (min-width: 600px) {
+
+    /* ------------------------------------Meny------------------------- */
+    .meny {
+        list-style-type: none;
+        overflow: hidden;
+        width: 100%;
+        display: table;
+        text-align: center;
+        font-size: 30px;
+        /* padding-inline-start: 0px; */
+    }
+
+    .meny li {
+        display: inline-block;
+    }
+
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        border-bottom: var(--secondary) 2px solid;
+        font-weight: bold;
+    }
+    /* ------------------------------------------------------------- */
+    .me {
+        height: 300px;
+        border-radius: 40px;
+    }
+
+    .diamond {
+        background: #fff;
+        height: 300px;
+        transform: rotate(45deg);
+        width: 300px;
+        overflow: hidden;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        margin-top: 80px;
+        margin-left: 100px;
+    }
+
+    .diamond p {
+        display: table-cell;
+        height: 300px;
+        transform: rotate(-45deg);
+        vertical-align: middle;
+    }
+
+    .diamond2 {
+        background: #fff;
+        height: 450px;
+        transform: rotate(45deg);
+        width: 450px;
+        overflow: hidden;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        margin-top: 120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .diamond2 ul {
+        /* padding: 25px 15px 0px 0px; */
+        /* margin-left: -200px;*/
+        margin-top: 130px; 
+        list-style: none;
+        font-size: 24px;
+        transform: rotate(-45deg);
+    }
+}
+
+/* ------------------------------------Mobil plattform------------------------- */
+@media screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .me {
+        height: 200px;
+        border-radius: 40px;
+    }
+
+    .diamond {
+        background: #fff;
+        height: 150px;
+        transform: rotate(45deg);
+        width: 150px;
+        overflow: hidden;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        margin-top: 30px;
+    }
+
+    .diamond p {
+        display: table-cell;
+        height: 150px;
+        transform: rotate(-45deg);
+        vertical-align: middle;
+        font-size: 16px;
+    }
+
+    .diamond2 {
+        background: #fff;
+        transform: rotate(45deg);
+        width: 300px;
+        overflow: hidden;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .diamond2 ul {
+        margin: 0px 0px;
+        padding: 40px 0px 0px 0px;
+        list-style: none;
+        height: 300px;
+        transform: rotate(-45deg);
+        vertical-align: middle;
+        font-size: 16px;
+    }
+
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+        left: 15px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+
+    .cv {
+        width: 300px;
+    }
+
+    .website {
+        width: 40vw;
+    }
+
+    .website img {
+        width: 40vw;
+
+    }
+
+    input[type=text], input[type=email], textarea {
+        width: 80%;
+    }
+
+
+
+
+
+
+
+/* ------------------------------------Meny------------------------- */
+    nav{
+        background-color: var(--bgcolor);
+        height: 60px;
+        position: static;
+
+    }
+    .meny {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style-type: none;
+        background-color: var(--bgcolor);
+        width: 40vw;
+        top: 50px;
+        height: 300px;
+        right: -300px;
+        padding: 20px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .meny li a {
+        text-decoration: none;
+        color: #000;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .meny li a:hover {
+        border-bottom: var(--secondary) 2px solid;
+        font-weight: bold;
+    }
+
+    #openMenu {
+        /* display: block; */
+        cursor: pointer;
+        float: right;
+        margin-top: 15px;
+    }
+
+    #openMenu div {
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+
+    #closeMenu {
+        display: none;
+        cursor: pointer;
+        float: right;
+        margin-top: 15px;
+    }
+
+    #line4 {
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        margin-top: 15px;
+        transform: rotate(45deg);
+        right: 15px;
+    }
+
+    #line5 {
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        margin-top: 15px;
+        transform: rotate(-45deg);
+        right: 15px;
+    }
+
+}
+
+
